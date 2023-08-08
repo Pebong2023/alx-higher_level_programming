@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 
-for letter in range(97,123):
-    if chr(letter) not in ['q', 'e']:
-        print(chr(letter), end="")
+for k in range(97, 123):
+    if k not in [101, 113]:
+        print(chr(k), end='')
