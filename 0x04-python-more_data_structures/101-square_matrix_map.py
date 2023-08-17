@@ -3,5 +3,5 @@ def square_matrix_map(matrix=[]):
     """
     Calculate the square of each element in a matrix using map and lambda functions.
     """
-    squared_matrix = [[y ** 2 for y in row] for row in matrix]
-    return (squared_matrix)
+    squared_matrix = (list(map(lambda row: list(map(lambda y: y ** 2, row)), matrix)))
+    return( squared_matrix)
