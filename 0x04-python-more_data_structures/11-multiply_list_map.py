@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-def multiply_list_elements(my_list=[], number=0):
-    return (list(map(lambda x: x * number, my_list)))
+def multiply_list_elements(my_list=[], factor=1):
+    return (list(elements(lambda x: x * factor, my_list)))
