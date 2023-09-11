@@ -1,11 +1,10 @@
 #!/usr/bin/python3
+"""Defines an inherited list class MyList."""
 
-"""
-Returns True if the object is exactly an instance of the specified class; otherwise False.
-"""
 
-def is_same_class(obj, a_class):
-    """
-    Returns True if the object is exactly an instance.
-    """
-    return True if type(obj) == a_class else False
+class MyList(list):
+    """Implements sorted printing for the built-in list class."""
+
+    def print_sorted(self):
+        """Print a list in sorted ascending order."""
+        print(sorted(self))
